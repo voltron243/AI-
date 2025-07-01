@@ -62,10 +62,10 @@ print(z) # and  Will be false
 a, b = 1, 2
 
 if a > b:   # False
-    print(a).  #jump
+    print(a)  #jump
 # else if  
-elif a !== 1: # True
-    print(b) # excute
+elif a != 1:  # True
+    print(b) # execute
 else:
     print(4567)
 
