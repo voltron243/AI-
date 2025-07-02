@@ -16,8 +16,8 @@ print(type(name))
 # Collection Data Types
 # List      item can be changed.  
 a = [Score, "Andre", age]
-#a[1] = 200
-#print(a)
+a[1] = 200
+print(a)
 
 # Tuple     fixed value 
 b = (age, name, 6896, "Andre", True)
@@ -58,14 +58,4 @@ y = False
 z = x or y
 print(z) # and  Will be false
          # or  - if one of them is true, then the other one is true 
-
-a, b = 1, 2
-
-if a > b:   # False
-    print(a)  #jump
-# else if  
-elif a != 1:  # True
-    print(b) # execute
-else:
-    print(4567)
 
