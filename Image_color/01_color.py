@@ -11,4 +11,4 @@ color_image = np.array(
 
 plt.imshow(color_image)
 plt.colorbar()
-plt.show
+plt.show()
