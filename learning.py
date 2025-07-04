@@ -43,7 +43,20 @@ if b < a:
     print("b is smaller than a")
 elif b == a:
     print("b and a are the same")
-    
+
+# def my_function():
+#     print("andre")
+# my_function()
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name 
+        self.age = age 
+
+p1 = Person("john", 36)
+
+print(p1.name)
+print(p1.age)
  
     
 
