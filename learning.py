@@ -57,6 +57,13 @@ p1 = Person("john", 36)
 
 print(p1.name)
 print(p1.age)
+
+def my_function(x):
+    return 5 * x 
+
+print(my_function(3))
+print(my_function(8))
+print(my_function(10))
  
     
 
