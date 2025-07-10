@@ -80,7 +80,7 @@ def test_model(model, test_loader):
             test_loss += loss.item()
             _, prediction = torch.max(output.data, 1) # Prediction
             
-            total += loss.size(0)
+            total += output.size(0)
             correct += (prediction == label).sum().item()
             
     test_loss = test_loss / len(test_loader) # Test loss
