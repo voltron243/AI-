@@ -86,7 +86,7 @@ def test_model(model, test_loader):
     test_loss = test_loss / len(test_loader) # Test loss
     test_acc = 100. * correct / total # 
     
-    print(f"Test loss: {test_loss:.f} Accuracy: {test_acc:.2f}%")
+    print(f"Test loss: {test_loss:.f} Accuracy: {test_acc:.4f}%")
             
 # Entrance of the whole project
 if __name__ == "__main__":
