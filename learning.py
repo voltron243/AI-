@@ -64,7 +64,22 @@ def my_function(x):
 print(my_function(3))
 print(my_function(8))
 print(my_function(10))
- 
+
+
+# class Person:
+#     def __init__(self):
+#         pass
+    
+    
+# # Neural networks are essentially parameterized function approximaters 
+
+# class MLP(nn.module):
+#     pass
+    
+#     # Entrance
+#     if __name__ == "main":
+#         pass
+
     
 
 

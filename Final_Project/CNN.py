@@ -23,12 +23,12 @@ class CNN(nn.Module):
     def forward(self, x):
         # first conv block (layer)
         y1 = self.conv1(x)
-        y1 = F.reLu(y1)
+        y1 = F.relu(y1)
         y1 = self.pool1(y1)
         
         # second conv block (layer)
         y2 = self.conv2(y1)
-        y2 = F.reLu(y1)
+        y2 = F.relu(y1)
         y2 = self.pool2(y2) 
         
         f = y2.view(y2.size(0), -1)

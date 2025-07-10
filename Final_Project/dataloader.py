@@ -14,7 +14,7 @@ class MNISTDataLoader:
             transforms.RandomRotation(degrees=15),
             transforms.Normalize((0.1307,), (0.3081,))
         ])
-        
+        # creates a dataset
         self.train_dataset = torchvision.datasets.MNIST(
             root='./data', train=True, download=True, transform=self.transforms
         )
@@ -39,7 +39,7 @@ class MNISTDataLoader:
         plt.axis('off')
         plt.show()
 
-
+# Entrance 
 if __name__ == "__main__":
     
     data_loader = MNISTDataLoader()
