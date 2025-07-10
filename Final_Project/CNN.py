@@ -13,7 +13,7 @@ class CNN(nn.Module):
         self.conv2 = nn.Conv2d(in_channels=32, out_channels=64, kernel_size=3, stride=1, padding=1)
         self.pool2 = nn.MaxPool2d(kernel_size=2, stride=2, padding=0)
         
-        self.dropout = nn.Dropout2d(p=0.5)
+        self.dropout = nn.Dropout(p=0.5)
         
         # Define the fully connected layer (MLP)
         self.fc1 = nn.Linear(64 * 7 * 7, 128) # 3134
@@ -28,7 +28,7 @@ class CNN(nn.Module):
         
         # second conv block (layer)
         y2 = self.conv2(y1)
-        y2 = F.relu(y1)
+        y2 = F.relu(y2)
         y2 = self.pool2(y2) 
         
         f = y2.view(y2.size(0), -1)
@@ -47,3 +47,6 @@ if __name__ == "__main__":
     
     import_tensor = torch.randn(1, 1, 28, 28) # Batch size of 1, 1 channel, 28x28 image
     
+    output = model(import_tensor)
+    
+    print(output)

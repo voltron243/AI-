@@ -56,7 +56,7 @@ def train_model(model, train_loader):
         
         # See what actually is in it 
         # programming starts from 0 then 1,2 and so on
-        print(f"Epoch {[epoch+1]/30}, Loss: {epoch_loss:.4f}, Accuracy: {epoch_acc:.2f}% ")
+        print(f"Epoch [{epoch+1}/30], Loss: {epoch_loss:.4f}, Accuracy: {epoch_acc:.2f}% ")
         
     return train_loss, train_acc
 
