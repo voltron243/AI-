@@ -86,7 +86,7 @@ def test_model(model, test_loader):
     test_loss = test_loss / len(test_loader) # Test loss
     test_acc = 100. * correct / total # 
     
-    print(f"Test loss: {test_loss:.f} Accuracy: {test_acc:.4f}%")
+    print(f"Test loss: {test_loss:.4f} Accuracy: {test_acc:.2f}%")
             
 # Entrance of the whole project
 if __name__ == "__main__":
@@ -109,4 +109,4 @@ if __name__ == "__main__":
     plot_training_history(train_loss, train_acc)
     
     # save the model as a file (*.pth)
-    torch.save(model.state_dict(), 'mnist_model.pth')
+    torch.save(model.state_dict(), 'mnist_model1.pth') 
