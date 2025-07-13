@@ -19,7 +19,7 @@ def train_model(model, train_loader):
     train_acc = [] # accuracy 
     
     # Put the model into the training model
-    for epoch in range(30): # Example: 10 epochs
+    for epoch in range(400): # Example: 10 epochs
         model.train()
         
         running_loss = 0.0
@@ -56,7 +56,7 @@ def train_model(model, train_loader):
         
         # See what actually is in it 
         # programming starts from 0 then 1,2 and so on
-        print(f"Epoch [{epoch+1}/30], Loss: {epoch_loss:.4f}, Accuracy: {epoch_acc:.2f}% ")
+        print(f"Epoch [{epoch+1}/400], Loss: {epoch_loss:.4f}, Accuracy: {epoch_acc:.2f}% ")
         
     return train_loss, train_acc
 
@@ -109,4 +109,4 @@ if __name__ == "__main__":
     plot_training_history(train_loss, train_acc)
     
     # save the model as a file (*.pth)
-    torch.save(model.state_dict(), 'mnist_model1.pth') 
+    torch.save(model.state_dict(), 'mnist_model3.pth') 
