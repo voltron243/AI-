@@ -61,6 +61,6 @@ if __name__ == "__main__":
     print("Running simple MNIST training...")
 
     model = CNN()
-    model.load_state_dict(torch.load('/Users/andrechan/Documents/AI/mnist_model2.pth', map_location='cpu'))
+    model.load_state_dict(torch.load('/Users/andrechan/Documents/AI/mnist_model3.pth', map_location='cpu'))
     
     predicted_digit = predict_image(model, '/Users/andrechan/Documents/AI/Final_Project/photo.png')
